@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+<title id="title">Zring Mustafa — Building practical software</title>
+<desc id="desc">A dark navy banner with softly moving gold and teal lights.</desc>
+<defs>
+<linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0b1220"/><stop offset="1" stop-color="#162b38"/></linearGradient>
+<linearGradient id="line"><stop stop-color="#eac471"/><stop offset="1" stop-color="#54c9bc"/></linearGradient>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity=".045"/></pattern>
+</defs>
+<style>
+.light{animation:float 8s ease-in-out infinite alternate;transform-box:fill-box;transform-origin:center}
+.second{animation-delay:-4s}
+.bar{stroke-dasharray:120 1000;animation:travel 9s linear infinite}
+@keyframes float{from{transform:translateY(-12px);opacity:.12}to{transform:translateY(12px);opacity:.28}}
+@keyframes travel{to{stroke-dashoffset:-1120}}
+@media(prefers-reduced-motion:reduce){.light,.bar{animation:none}}
+</style>
+<rect width="1200" height="300" rx="20" fill="url(#bg)"/>
+<rect width="1200" height="300" rx="20" fill="url(#grid)"/>
+<circle class="light" cx="1050" cy="55" r="150" fill="#54c9bc" opacity=".16"/>
+<circle class="light second" cx="890" cy="265" r="110" fill="#eac471" opacity=".13"/>
+<text x="64" y="90" fill="#eac471" font-size="15" font-family="Segoe UI,Arial,sans-serif" letter-spacing="5">ZASTECH / ZRING MUSTAFA</text>
+<text x="64" y="155" fill="#f5f7fa" font-size="44" font-weight="700" font-family="Segoe UI,Arial,sans-serif">Building practical software.</text>
+<text x="66" y="200" fill="#b5c4d4" font-size="20" font-family="Segoe UI,Arial,sans-serif">Business systems. Clear workflows. Useful tools.</text>
+<path d="M64 244H1136" stroke="#ffffff" stroke-opacity=".1" stroke-width="2"/>
+<path class="bar" d="M64 244H1136" stroke="url(#line)" stroke-width="3"/>
+</svg>
