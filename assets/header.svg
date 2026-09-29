@@ -1,26 +1,65 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
-<title id="title">Zring Mustafa — Building practical software</title>
-<desc id="desc">A dark navy banner with softly moving gold and teal lights.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="620" viewBox="0 0 1440 620" role="img" aria-labelledby="title desc">
+<title id="title">Zring Mustafa — ZASTech</title><desc id="desc">Founder and CEO of ZASTech. A midnight-blue scene with an animated floating three-dimensional glass architecture and cyan light.</desc>
 <defs>
-<linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0b1220"/><stop offset="1" stop-color="#162b38"/></linearGradient>
-<linearGradient id="line"><stop stop-color="#eac471"/><stop offset="1" stop-color="#54c9bc"/></linearGradient>
-<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity=".045"/></pattern>
+<linearGradient id="bg" x2="1" y2="1"><stop stop-color="#050914"/><stop offset=".6" stop-color="#0b1424"/><stop offset="1" stop-color="#07101d"/></linearGradient>
+<radialGradient id="halo"><stop stop-color="#087d98" stop-opacity=".36"/><stop offset="1" stop-color="#087d98" stop-opacity="0"/></radialGradient>
+<linearGradient id="top" x2=".8" y2="1"><stop stop-color="#9df8ff" stop-opacity=".85"/><stop offset="1" stop-color="#126a92" stop-opacity=".45"/></linearGradient>
+<linearGradient id="left" x2="1" y2="1"><stop stop-color="#167a9e" stop-opacity=".65"/><stop offset="1" stop-color="#091b36" stop-opacity=".9"/></linearGradient>
+<linearGradient id="right" x2="0" y2="1"><stop stop-color="#47cbd8" stop-opacity=".5"/><stop offset="1" stop-color="#112944" stop-opacity=".9"/></linearGradient>
+<linearGradient id="accent"><stop stop-color="#9ff7f3"/><stop offset="1" stop-color="#439dce"/></linearGradient>
+<filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="8"/></filter>
+<filter id="shadow" x="-50%" y="-50%" width="200%" height="250%"><feDropShadow dx="0" dy="24" stdDeviation="20" flood-color="#000" flood-opacity=".6"/></filter>
+<g id="cube">
+<path d="M0 -90 150 -5 0 80 -150 -5Z" fill="url(#top)" stroke="#b3ffff" stroke-opacity=".7"/>
+<path d="M-150 -5 0 80 0 200 -150 115Z" fill="url(#left)" stroke="#64deed" stroke-opacity=".4"/>
+<path d="M0 80 150 -5 150 115 0 200Z" fill="url(#right)" stroke="#64deed" stroke-opacity=".55"/>
+<path d="M-150 -5 0 80 150 -5M0 80V200" fill="none" stroke="#c4ffff" stroke-opacity=".8"/>
+</g>
 </defs>
 <style>
-.light{animation:float 8s ease-in-out infinite alternate;transform-box:fill-box;transform-origin:center}
-.second{animation-delay:-4s}
-.bar{stroke-dasharray:120 1000;animation:travel 9s linear infinite}
-@keyframes float{from{transform:translateY(-12px);opacity:.12}to{transform:translateY(12px);opacity:.28}}
-@keyframes travel{to{stroke-dashoffset:-1120}}
-@media(prefers-reduced-motion:reduce){.light,.bar{animation:none}}
+.float{animation:levitate 7s ease-in-out infinite}
+.signal{animation:pulse 4s ease-in-out infinite}
+@keyframes levitate{0%,100%{transform:translateY(0)}50%{transform:translateY(-18px)}}
+@keyframes pulse{0%,100%{opacity:.35}50%{opacity:1}}
+@media(prefers-reduced-motion:reduce){.float,.signal{animation:none}}
 </style>
-<rect width="1200" height="300" rx="20" fill="url(#bg)"/>
-<rect width="1200" height="300" rx="20" fill="url(#grid)"/>
-<circle class="light" cx="1050" cy="55" r="150" fill="#54c9bc" opacity=".16"/>
-<circle class="light second" cx="890" cy="265" r="110" fill="#eac471" opacity=".13"/>
-<text x="64" y="90" fill="#eac471" font-size="15" font-family="Segoe UI,Arial,sans-serif" letter-spacing="5">ZASTECH / ZRING MUSTAFA</text>
-<text x="64" y="155" fill="#f5f7fa" font-size="44" font-weight="700" font-family="Segoe UI,Arial,sans-serif">Building practical software.</text>
-<text x="66" y="200" fill="#b5c4d4" font-size="20" font-family="Segoe UI,Arial,sans-serif">Business systems. Clear workflows. Useful tools.</text>
-<path d="M64 244H1136" stroke="#ffffff" stroke-opacity=".1" stroke-width="2"/>
-<path class="bar" d="M64 244H1136" stroke="url(#line)" stroke-width="3"/>
+<rect width="1440" height="620" rx="24" fill="url(#bg)"/>
+<ellipse cx="1100" cy="285" rx="420" ry="330" fill="url(#halo)"/>
+<g fill="none" stroke="#3d7992" stroke-opacity=".12">
+<path d="M730 510 1080 307 1430 510 1080 712Z"/>
+<path d="M780 481 1130 684M830 452 1180 655M880 423 1230 626M930 394 1280 597M980 365 1330 568M1030 336 1380 539"/>
+<path d="M780 539 1130 336M830 568 1180 365M880 597 1230 394M930 626 1280 423M980 655 1330 452M1030 684 1380 481"/>
+</g>
+<rect x="56" y="47" width="33" height="33" rx="9" fill="#b4f7f3"/>
+<path d="M65 57H80L65 70H80" stroke="#081b2a" stroke-width="3" fill="none"/>
+<text x="102" y="70" fill="#e6f3f8" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="700" letter-spacing="3">ZASTECH</text>
+<text x="57" y="161" fill="#83deda" font-family="Segoe UI,Arial,sans-serif" font-size="13" letter-spacing="4">FOUNDER &amp; CEO</text>
+<text x="52" y="246" fill="#f3f7ff" font-family="Segoe UI,Arial,sans-serif" font-size="77" font-weight="700" letter-spacing="-3">Zring Mustafa</text>
+<text x="57" y="311" fill="#bacadb" font-family="Segoe UI,Arial,sans-serif" font-size="30" font-weight="300">Software for real-world operations.</text>
+<text x="58" y="366" fill="#6e8ba3" font-family="Segoe UI,Arial,sans-serif" font-size="17">Business systems. Connected workflows. Practical tools.</text>
+<rect x="58" y="416" width="248" height="39" rx="19" fill="#102631" stroke="#2e5965"/>
+<circle cx="79" cy="435" r="4" fill="#8ce7d4"/>
+<text x="94" y="441" fill="#b8dadf" font-family="Segoe UI,Arial,sans-serif" font-size="12" letter-spacing="1.5">ACCOUNTING / CRM / EDUCATION</text>
+<g filter="url(#shadow)">
+<path d="M885 456 1085 340 1285 456 1085 571Z" fill="#0b2432" stroke="#3e8497" stroke-opacity=".6"/>
+<path d="M885 456V470L1085 585 1285 470V456L1085 571Z" fill="#06121f" stroke="#24516a"/>
+<ellipse cx="1085" cy="456" rx="135" ry="39" fill="#38dbe9" opacity=".17" filter="url(#glow)"/>
+<g class="float">
+<use href="#cube" transform="translate(1085 270)"/>
+<use href="#cube" transform="translate(1085 194) scale(.71)" opacity=".93"/>
+<use href="#cube" transform="translate(1085 139) scale(.43)"/>
+<path d="M1085 62V27M1100 70 1124 56M1070 70 1046 56" stroke="#99f8f7" stroke-opacity=".7"/>
+<circle class="signal" cx="1085" cy="26" r="4" fill="#d9ffff"/>
+</g>
+</g>
+<g font-family="Segoe UI,Arial,sans-serif" font-size="10" letter-spacing="2" fill="#5f94ab">
+<path d="M1215 208H1310" stroke="#3e7187"/><circle cx="1215" cy="208" r="3" fill="#98f4f3"/><text x="1250" y="197">BUILD</text>
+<path d="M879 345H950" stroke="#3e7187"/><text x="867" y="333">CONNECT</text>
+</g>
+<path d="M58 534H738" stroke="#233347"/>
+<text x="58" y="566" fill="#658096" font-family="Segoe UI,Arial,sans-serif" font-size="11" letter-spacing="3">IDEA</text>
+<path d="M114 562H153" stroke="#4a7a86"/>
+<text x="172" y="566" fill="#658096" font-family="Segoe UI,Arial,sans-serif" font-size="11" letter-spacing="3">SYSTEM</text>
+<path d="M253 562H292" stroke="#4a7a86"/>
+<text x="311" y="566" fill="#9edfdc" font-family="Segoe UI,Arial,sans-serif" font-size="11" letter-spacing="3">EXPERIENCE</text>
 </svg>
